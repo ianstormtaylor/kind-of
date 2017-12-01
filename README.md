@@ -75,6 +75,9 @@ kindOf(/foo/);
 kindOf(new RegExp('foo'));
 //=> 'regexp'
 
+kindOf(new Error('foo'));
+//=> 'error'
+
 kindOf(function () {});
 //=> 'function'
 
